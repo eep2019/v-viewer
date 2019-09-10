@@ -181,7 +181,7 @@ var install = function install(Vue, _ref) {
       log('viewer bind');
       var debouncedCreateViewer = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_throttle_debounce__["a" /* debounce */])(50, createViewer);
       debouncedCreateViewer(el, binding.value);
-
+      console.log("eep test");
       createWatcher(el, binding, vnode, debouncedCreateViewer);
 
       if (!binding.modifiers.static) {
